@@ -66,11 +66,8 @@ export default function BlogPage() {
           >
             <UserCard
               key={user?._id}
-              authorId={user?._id}
-              currentUser={loggedInUser?._id || undefined}
-              followers={user?.followers}
               name={user.name}
-              profilePhoto={user.profilePhoto}
+              photo={user.profilePhoto}
             />
           </div>
         ))}

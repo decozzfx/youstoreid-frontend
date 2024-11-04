@@ -38,12 +38,8 @@ const PostDetailCard = ({ post }: any) => {
       <div className="flex justify-between gap-4">
         <div className="w-full">
           <UserCard
-            authorId={post?.user?._id}
-            currentUser={currentUserId}
-            followers={post?.user?.followers}
             name={post?.user?.name}
-            postedOn={timeDifference}
-            profilePhoto={post?.user?.profilePhoto}
+            photo="https://cdn.fakercloud.com/avatars/ricburton_128.jpg"
           />
         </div>
         <DeleteAndUpdatePost isMyPost={isMyPost} post={post} postId={_id} />
